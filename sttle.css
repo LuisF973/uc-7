@@ -1,0 +1,34 @@
+/* *{ margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+
+}
+ 
+#destaque{
+    color: #ff6600;
+    padding: 0.5%;
+    font-weight: bolder;
+}
+
+p{
+    margin-top: 15px;
+    padding: 0.5%;
+    color: #666;
+}
+
+div {
+    font-size: 2em;
+
+}
+.pixel {
+    font: 20px verdana, arial, tahoma, sans-serif;
+}
+
+.tipografia {
+    font: 1.25rem verdana, arial, tahoma, sans-serif;
+} */
