@@ -1,0 +1,60 @@
+
+    .grid-contrainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-gap: 10px
+            
+        }
+    .grid-item {
+        background-color: rgb(225, 225, 225);
+        padding: 20px;
+        text-align: center;
+    }  
+    header h1 {
+        font-size: 50px;
+    }
+    header p{
+        font-size: 25px;
+   }
+
+   header p span{
+    color: #60b9e5;
+   }
+    
+    
+    .grid-item h2 {
+        font-size: 35px;
+    }
+    .grid-item h3 {
+        font-size: 35px;
+    }
+    .grid-item h4 {
+        font-size: 35px;
+    }
+    .grid-item p {
+        font-size: 30px;
+    }
+    
+
+    header{
+        text-align: center;
+    }
+
+    .grid-item:hover { 
+        transform: scale(1.05); /* Zoom no card */
+        color: #000000;
+    }
+
+    .grid-item {
+        background-color: white;
+        border: 1.1875rem solid #60b9e5; /* 3px -> 0.1875rem */
+        border-radius: 2.625rem; /* 10px -> 0.625rem */
+        padding: 2.9375rem; /* 15px -> 0.9375rem */
+        width: 15rem; /* 250px -> 15.625rem */
+        text-align: center;
+        margin: 1.25rem 1.625rem; /* 20px 10px -> 1.25rem 0.625rem */
+        box-shadow: 1.3125rem 1.3125rem 1.9375rem rgba(0, 0, 0, 0.2); /* 5px 5px 15px -> 0.3125rem 0.3125rem 0.9375rem */
+        display: inline-block; /* Garante que os cards fiquem lado a lado */
+        vertical-align: top; /* Alinha os elementos pelo topo */
+        transition: transform 0.2s ease-in-out; /* Suaviza a animação de aumento no hover */
+    }

@@ -8,19 +8,23 @@
 /* Corpo da página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 1.25rem; /* 20px -> 1.25rem */
-    color: #333;
+    background-image: url('../img/luis.jpg'); /* Link de imagem de tecnologia */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #17a30f;
     text-align: center;
+    padding: 1.25rem; /* 20px -> 1.25rem */
 }
 
 /* Cabeçalho */
 header {
-    background-color: #00b621;
+    background-color: rgb(0, 62, 93); /* Cor de fundo do cabeçalho com transparência */
     color: white;
     padding: 1.25rem; /* 20px -> 1.25rem */
-    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+    margin-bottom: 3.25rem; /* 20px -> 1.25rem */
 }
+
 
 /* Área principal */
 main {
@@ -36,42 +40,45 @@ main {
 /* Modelo de caixa aplicado aos cards */
 .produto-card {
     background-color: white;
-    border: 0.1875rem solid #00b61e; /* 3px -> 0.1875rem */
-    border-radius: 0.625rem; /* 10px -> 0.625rem */
-    padding: 0.9375rem; /* 15px -> 0.9375rem */
+    border: 0.1875rem solid #60b9e5; /* 3px -> 0.1875rem */
+    border-radius: 1.625rem; /* 10px -> 0.625rem */
+    padding: 1.9375rem; /* 15px -> 0.9375rem */
     width: 15.625rem; /* 250px -> 15.625rem */
     text-align: center;
-    margin: 1.25rem 0.625rem; /* 20px 10px -> 1.25rem 0.625rem */
-    box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2); /* 5px 5px 15px -> 0.3125rem 0.3125rem 0.9375rem */
+    margin: 1.25rem 1.625rem; /* 20px 10px -> 1.25rem 0.625rem */
+    box-shadow: 1.3125rem 1.3125rem 1.9375rem rgba(0, 0, 0, 0.2); /* 5px 5px 15px -> 0.3125rem 0.3125rem 0.9375rem */
     display: inline-block; /* Garante que os cards fiquem lado a lado */
     vertical-align: top; /* Alinha os elementos pelo topo */
+    transition: transform 0.2s ease-in-out; /* Suaviza a animação de aumento no hover */
 }
 
 /* Imagens dos produtos */
 .produto-card img {
     width: 100%;
     height: 9.375rem; /* 150px -> 9.375rem */
-    border-radius: 0.3125rem; /* 5px -> 0.3125rem */
-    border: 0.125rem solid #ddd; /* 2px -> 0.125rem */
-    margin-bottom: 0.625rem; /* 10px -> 0.625rem */
+    border-radius: 1.3125rem; /* 5px -> 0.3125rem */
+    border: 1.0rem solid #ddd; /* 2px -> 0.125rem */
+    margin-bottom: .625rem; /* 10px -> 0.625rem */
 }
 
 /* Estilo dos títulos dos produtos */
 .produto-card h3 {
-    color: #cd9107;
-    margin-bottom: 0.3125rem; /* 5px -> 0.3125rem */
+    color: #07b3cd;
+    margin-bottom: 1.25rem; /* 5px -> 0.3125rem */
 }
 
-.produto-card:hover{ 
-    transform: scale(1.05);/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-color: #00b61e;
+/* Efeito ao passar o mouse sobre o card */
+.produto-card:hover { 
+    transform: scale(1.05); /* Zoom no card */
+    color: #00b61e;
+}
 
-}/* Rodapé */
-
-
-footer{
-    background-color: #00b621;
+/* Rodapé */
+footer {
+    background-color: rgba(96, 185, 229, 0.8); /* Cor de fundo do rodapé com transparência */
     color: white;
-    padding: 0.625rem; /* 10px -> 0.625rem */
+    padding: 1.10rem; /* 10px -> 0.625rem */
     margin-top: 1.25rem; /* 20px -> 1.25rem */
 }
+
+

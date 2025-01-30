@@ -1,0 +1,11 @@
+.grid-contrainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.geip-item{
+    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
