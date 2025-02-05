@@ -1,0 +1,123 @@
+:root {
+    --cor-fundo: #333;
+    --cor-texto: #fff;
+    --cor-header: #222;
+    --cor-main: #111;
+    --cor-secao: #222;
+    --cor-borda: #444;
+
+    --fonte-padrao: Arial, sans-serif;
+    --tamanho-h1: 2rem;
+    --tamanho-h2: 1.5rem;
+    --tamanho-p: 1rem;
+
+    --padding-padrao: 1rem;
+    --padding-header: 2rem;
+    --margin-padrao: 1rem;
+
+    --largura-max-main: 75rem;
+    --largura-imagens: 6.25rem;
+    --altura-imagens: 6.25rem;
+    --border-radius: 0.3125rem;
+    --border-size: 0.0625rem;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+header {
+    background-color: var(--cor-header);
+    padding: var(--padding-header);
+    text-align: center;
+}
+
+header img {
+    max-width: 5%;
+    height:auto;
+    border-radius: var(--border-radius);
+}
+
+main {
+    max-width: var(--largura-max-main);
+    margin: 10px auto;
+    padding:10px;
+    background-color: var(--cor-main);
+    display: flex;
+    gap: 20px;
+    
+
+    
+}
+
+
+.band {
+    background-color: var(--cor-secao);
+    padding: var(--padding-padrao);
+    border-radius: var(--border-radius);
+    text-align: center;
+    display: flex;
+    flex: auto;
+}
+
+.band img {
+    width: var(--largura-imagens);
+    height: var(--altura-imagens);
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+.band-info{
+    flex: 1;
+}
+
+.band-info h2 {
+    font-size: var(--tamanho-h2);
+    margin-bottom: 0.5rem;
+    
+}
+
+.band-info p {
+    font-size: var(--tamanho-p);
+    
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+aside {
+    background-color: var(--cor-header);
+    color: var(--cor-texto);
+    padding: var(--padding-padrao);
+    text-align:start;
+    margin: var(--padding-padrao);
+}
+
+footer {
+    background-color: var(--cor-header);
+    color: var(--cor-texto);
+    padding: var(--padding-padrao);
+    position:fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+
+}
